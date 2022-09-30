@@ -1,10 +1,14 @@
 print("Hey, what`s up?")
 data = open("file.txt", "r")
 loop = data.readlines()
+List = []
 for line in loop:
-    List = line.split(" ")
-    print(List)
-
+    common = line.split(" ")
+    print(common)
+for j in range(0, len(common)):
+    a = int(common[j])
+    List.append(a)
+print(List)
 for i in range(0, len(List)):
     for k in range(i+1, len(List)):
         if List[i] > List[k]:
