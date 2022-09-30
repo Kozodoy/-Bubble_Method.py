@@ -1,5 +1,10 @@
 print("Hey, what`s up?")
-List = [5, 4, 3, 8, 9, 10]
+data = open("file.txt", "r")
+loop = data.readlines()
+for line in loop:
+    List = line.split(" ")
+    print(List)
+
 for i in range(0, len(List)):
     for k in range(i+1, len(List)):
         if List[i] > List[k]:
