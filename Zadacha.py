@@ -1,6 +1,7 @@
 print("Hey, what`s up?")
 data = open("file.txt", "r")
 loop = data.readlines()
+print(loop)
 List = []
 for line in loop:
     common = line.split(" ")
